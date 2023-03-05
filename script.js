@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
   console.log(button);
   button.addEventListener('click', (e)=>{
     e.preventDefault();
-    document.querySelector('.form').classList.add('form-open');
+    // document.querySelector('.form').classList.add('form-open');
     console.log('Okey');
   })
   form.addEventListener('submit', formSend);
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
         method: 'POST',
         body: formData
       });
-      
+
       if(response.ok){
         let result = await response.json();
         alert(result.message);
