@@ -181,6 +181,10 @@
   margin: 0 auto;
   color: white;
   padding: 30px 0;
+  display: none;
+}
+.form-open{
+  display: flex;
 }
 .form *{
   outline: none;

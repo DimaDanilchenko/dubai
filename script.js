@@ -1,7 +1,13 @@
-"use strict"
 
 document.addEventListener('DOMContentLoaded', function(){
   const form = document.getElementById('form');
+  const button = document.querySelector('.button');
+  console.log(button);
+  button.addEventListener('click', (e)=>{
+    e.preventDefault();
+    document.querySelector('.form').classList.add('form-open');
+    console.log('Okey');
+  })
   form.addEventListener('submit', formSend);
 
   async function formSend(e){
@@ -9,13 +15,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
     let error = formValidate(form);
 
-    if(error===0){
+    let formData = new FormData(form);
+
+    if(error === 0){
       form.classList.add("_sending");
       let response = await fetch('sendmail.php',{
         method: 'POST',
-        body: FormData
-
+        body: formData
       });
+      
       if(response.ok){
         let result = await response.json();
         alert(result.message);
