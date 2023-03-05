@@ -1,3 +1,3 @@
 # dubai
 
-Ссылка https://dimadanilchenko.github.io/dubai
+Ссылка https://dimadanilchenko.github.io/dubai/
