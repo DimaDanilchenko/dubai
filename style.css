@@ -1,0 +1,153 @@
+.body {
+  background-color: #1d1d1b;
+  font-family: 'Inter', sans-serif;
+}
+
+.lead {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.lead__title {
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .lead__title{
+    width: calc(100% - 2*32px);
+  }
+}
+
+.lead__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #cdb7a2;
+}
+.lead__image{
+  width: 100%;
+}
+.lead__list{
+  list-style-type: decimal;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+@media screen and (max-width: 500px) {
+  .lead__list{
+    width: calc(100% - 2*32px);
+  }
+}
+.lead__lists{
+  color: #cdb7a2;
+  margin-top: 20px;
+}
+.options{
+
+}
+.options__title{
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: calc(100% - 2*32px);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.options__subtitle{
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #cdb7a2;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: calc(100% - 32*2px);
+  text-align: justify;
+}
+.options__image{
+  width: 100%;
+}
+.options__block{
+  display: flex;
+  flex-direction: column;
+}
+.options__block-title{
+  color: #cdb7a2;
+  width: calc(100% - 2*32px);
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.options__block-text{
+  color: #cdb7a2;
+  width: calc(100% - 2*32px);
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: justify;
+}
+.options__video{
+  width: 100%;
+  margin-top: 20px;
+}
+/* background: #ba9c80; */
+
+.button {
+  padding: 20px 80px;
+  background: #ba9c80;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 10px;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.button .flare {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 45px;
+  transform: skewX(-45deg);
+  animation: flareAnimation;
+  left: -150%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+  animation: flareAnimation 3s infinite linear;
+}
+
+@keyframes flareAnimation {
+  0% {
+      left: -150%;
+  }
+  100% {
+      left: 150%;
+  }
+}
