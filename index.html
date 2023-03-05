@@ -13,9 +13,9 @@
 <body class="body">
   <div class="wrapper">
     <section class="lead">
-      <p class="lead__title">Информация про нас</p>
-      <p class="lead__title1">Информация про нас</p>
+      <p class="lead__title">Приветствую тебя, наш покупатель!</p>
       <img class="lead__image" src="./image/PLT_4338-Edit (1).jpg" alt="">
+      <p class="lead__title-bottom">Я - Дмитрий Иванушкин, моё Агентство прямой партнёр наших коллег из ОАЭ. Несколько реальных фактов про нас:</p>
       <ul class="lead__list">
         <li class="lead__lists">Мы работаем с самыми надёжными застройщиками страны </li>
         <li class="lead__lists">Наши покупатели резиденты даже бизнес-клубов</li>
@@ -77,10 +77,35 @@
         <p class="options__subtitle">Будь на шаг впереди, инвестируй в своё будущее и будущее своих детей. Купи или
           арендуй недвижимость в одной из стабильно развивающихся стран МИРА, оставь заявку на обратную связь:</p>
       </section>
-      <a href="#" class="button">Оставить заявку <span class="flare"></span></a>
+      <a href="#" class="button btn" data-modal>Оставить заявку <span class="flare"></span></a>
     </section>
 
-
+  </div>
+  <div class="wrapper">
+    <div class="form">
+      <form action="#" id="form" class="form_body">
+        <h1 class="form__title">Отправка данных на почту</h1>
+        <div class="form__item">
+          <label for="formName" class="form__label">Имя*:</label>
+          <input id="formName" type="text" name="name" class="form__input">
+        </div>
+        <div class="form__item">
+          <label for="formEmail" class="form__label">Email*:</label>
+          <input id="formEmail" type="text" name="email" class="form__input">
+        </div>
+        <div class="form__item">
+          <label for="formMessage" class="form__label">Сообщение:</label>
+          <textarea name="message" id="formMessage" class="form__input"></textarea>
+        </div>
+        <div class="form__item">
+          <div class="checkbox">
+            <input type="checkbox" name="agreement" id="formAgreement" class="checkbox__input" checked>
+            <label for="formAgreement" class="checkbox__label">Согласие на обработку персональных данных</label>
+          </div>
+        </div>
+        <button class="form__button" type="submit">Отправить</button>
+      </form>
+    </div>
   </div>
   <script src="./js/script.js"></script>
 </body>

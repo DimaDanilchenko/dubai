@@ -1,12 +1,17 @@
 .body {
   background-color: #1d1d1b;
   font-family: 'Inter', sans-serif;
+  position: relative;
+  
 }
 
 .lead {
   display: flex;
   flex-direction: column;
 
+}
+.wrapper{
+  position: relative;
 }
 
 .lead__title {
@@ -23,14 +28,14 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.lead__title1 {
-  font-size: 26px;
+.lead__title-bottom {
+  font-size: 20px;
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  color: rgb(241, 149, 28);
+  color: white;
   margin-bottom: 1rem;
   text-align: center;
   margin: 0 auto;
@@ -39,7 +44,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .lead__title{
+  .lead__title, .lead__title-bottom{
     width: calc(100% - 2*32px);
   }
 }
@@ -167,4 +172,49 @@
   100% {
       left: 150%;
   }
+}
+.popup{
+  position: absolute;
+  display: none;
+  width: calc(100% - 20*2px);
+  background-color: white;
+  height: 200px;
+  top: 20px;
+  
+}
+.popup-open{
+  display: flex;
+  margin: 0 auto;
+}
+.form{
+  max-width: 550px;
+  margin: 0 auto;
+  color: white;
+  padding: 30px 0;
+}
+.form__body{
+
+}
+.form__title{
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+.form__item{
+  margin: 0 0 20px 0;
+}
+.form__label{
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+.form__input{
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 18px;
+}
+textarea.form__input{
+  min-height: 120px;
 }
