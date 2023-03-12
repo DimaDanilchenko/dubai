@@ -2,10 +2,12 @@
 document.addEventListener('DOMContentLoaded', function(){
   const form = document.getElementById('form');
   const button = document.querySelector('.button');
+  const buttonClose = document.querySelector('.form__button2');
   console.log(button);
+
   button.addEventListener('click', (e)=>{
     e.preventDefault();
-    // document.querySelector('.form').classList.add('form-open');
+    document.querySelector('.form').classList.add('form-open');
     console.log('Okey');
   })
   form.addEventListener('submit', formSend);
@@ -76,4 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
   function emailTest(input){
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
   }
-})
+  buttonClose.addEventListener('click', ()=>{
+    document.querySelector('.form').classList.remove('form-open');
+  })
+});
