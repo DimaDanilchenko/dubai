@@ -3,9 +3,11 @@ document.addEventListener('DOMContentLoaded', function(){
   const form = document.getElementById('form');
   const button = document.querySelector('.button');
   const buttonClose = document.querySelector('.form__button2');
+  const body = document.querySelector('.body');
   console.log(button);
 
   button.addEventListener('click', (e)=>{
+    body.classList.add('body__open');
     e.preventDefault();
     document.querySelector('.form').classList.add('form-open');
     console.log('Okey');
@@ -80,5 +82,6 @@ document.addEventListener('DOMContentLoaded', function(){
   }
   buttonClose.addEventListener('click', ()=>{
     document.querySelector('.form').classList.remove('form-open');
+    body.classList.remove('body__open');
   })
 });

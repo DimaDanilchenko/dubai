@@ -385,3 +385,6 @@ textarea.form__input{
   top: 3px;
   box-shadow: 0 2px 0 #3f352c;
 }
+.body__open{
+  overflow: hidden;
+}
