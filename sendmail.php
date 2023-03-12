@@ -26,21 +26,11 @@ if(trim(!empty($_POST['name']))){
 if(trim(!empty($_POST['email']))){
   $body.='<p><strong>E-mail: </strong> '.$_POST['email'].'</p>';
 }
-if(trim(!empty($_POST['message']))){
-  $body.='<p><strong>Сообщение: </strong> '.$_POST['message'].'</p>';
-}
+
 
 $mail->Body = $body;
 
 //Отправка
-
-if(!$mail->send()){
-  $message = 'Ошибка';
-} else {
-  $message = 'Данные отправлены!'
-}
-
-$response = ['message' => $message];
 
 header('Content-type: application/json');
 echo json_encode($response);

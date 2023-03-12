@@ -223,7 +223,6 @@
   display: none;
   background-color: black;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -265,6 +264,7 @@
 }
 .form__title{
   font-size: 30px;
+  padding-top: 10px;
   font-weight: 700;
   margin: 0 0 30px 0;
   text-align: center;
