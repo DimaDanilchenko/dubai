@@ -345,7 +345,7 @@ textarea.form__input{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 30px;
+  min-height: 40px;
   background-color: #ba9c80;
   color: white;
   font-size: 18px;
@@ -363,7 +363,7 @@ textarea.form__input{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 30px;
+  min-height: 40px;
   background-color: #ba9c80;
   color: white;
   font-size: 18px;
