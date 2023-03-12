@@ -146,6 +146,20 @@
   width: calc(100% - 32*2px);
   text-align: justify;
 }
+.options__subtitle2{
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: calc(100% - 32*2px);
+  text-align: center;
+}
 .options__image{
   width: 100%;
 }
